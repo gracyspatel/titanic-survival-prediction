@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    {% include 'Components/_form.html' %}
+
+    <div class="mt-2">
+    {% if output or output==0: %}
+        {% if output==1 %}
+            <div class="bg-success p-2 rounded-2"><h5>The passenger named {{name}} Survived</h5></div>
+        {% elif output==0 %}
+            <div class="bg-danger p-2 rounded-2"><h5>Unfortunately the Passenger named {{name}} Died</h5></div>
+        {% endif %}
+    {% endif%}
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+<form method="post" class="w-100" action="{{url_for("home")}}">
+
+  <div class="d-flex w-100 gap-2">
+    <!--  Name -->
+      <div class="form-group mb-2 w-50">
+        <label for="name">Enter Full Name</label>
+        <input name="name" class="form-control" id="name" placeholder="Enter your name...">
+     </div>
+
+    <!-- Gender class  -->
+      <div class="form-group mb-2 w-25">
+        <label for="gender">Select Gender</label>
+        <select name="gender" class="form-control" id="gender">
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+    <!--  Age -->
+      <div class="form-group mb-2 w-25">
+        <label for="age">Enter Age</label>
+        <input name="age" class="form-control" id="age" placeholder="Enter your age...">
+      </div>
+  </div>
+
+  <div class="d-flex w-100 gap-2">
+    <!-- Passenger class  -->
+      <div class="form-group mb-2 w-50">
+        <label for="p_class">Select Class (PClass)</label>
+        <select name="p_class" class="form-control" id="p_class">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+
+    <!--  Fare -->
+      <div class="form-group mb-2 w-50">
+        <label for="fare">Enter Ticket Fare</label>
+        <input name="fare" class="form-control" id="fare" placeholder="Enter fare...">
+      </div>
+  </div>
+
+  <div class="d-flex w-100 gap-2">
+    <!--  Sib sp -->
+      <div class="form-group mb-2 w-50">
+        <label for="sib_sp">Enter Sib sp</label>
+        <input name="sib_sp" class="form-control" id="sib_sp" placeholder="Enter your age...">
+      </div>
+
+    <!--  Parch -->
+      <div class="form-group mb-2 w-50">
+        <label for="parch">Enter Parch</label>
+        <input name="parch" class="form-control" id="parch" placeholder="Enter your age...">
+      </div>
+  </div>
+
+  <div>
+    <!-- Embarked Place  -->
+      <div class="form-group mb-2">
+        <label for="embarked">Select from where you have Embarked </label>
+        <select name="embarked" class="form-control" id="embarked">
+          <option>Cherbourg</option>
+          <option>Queenstown</option>
+          <option>Southampton</option>
+        </select>
+      </div>
+  </div>
+
+  <div>
+    <!--  Submit Button  -->
+      <button type="submit" class="btn btn-primary mt-1 w-25">Submit</button>
+  </div>
+
+</form>
